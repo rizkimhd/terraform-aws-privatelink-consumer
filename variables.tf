@@ -38,3 +38,9 @@ variable "product_domain" {
   type        = "string"
   description = "Abbreviation of the product domain the created resources belong to"
 }
+
+variable "private_dns_enabled" {
+  type        = "string"
+  default     = "false"
+  description = "Only for Interface VPC endpoint to AWS services and AWS Marketplace partner service. Whether or not to associate a private hosted zone with the specified VPC"
+}
